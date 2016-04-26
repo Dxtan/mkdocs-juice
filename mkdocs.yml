@@ -2,6 +2,6 @@ site_name: My Docs
 pages:
 - HOME: 'index.md'
 - HELP:
-    - 'License': 'about/License.md'
-    - 'Release Notes': 'about/Release_Notes.md'
+    - 'License': 'about/license.md'
+    - 'Release Notes': 'about/release.md'
 theme_dir: theme
