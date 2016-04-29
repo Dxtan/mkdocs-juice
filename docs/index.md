@@ -1,17 +1,27 @@
-# Welcome to MkDocs
+<div class="container">
+  <div class="jumbotron">
+    <h2>Documentation</h2>
+    <h5>DingDone 官方开发者文档（<a href="leancloud-docs.tar.gz">离线下载</a>）</h5>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form class="search" role="search" action="/search.html" method="get">
+        <div class="form-group">
+          <input name="q" type="text" class="form-control input-lg search-input" placeholder="搜索全部文档、错误代码&hellip;">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+  <div class="row">
+      <div class="col-md-8 col-md-push-2">
+      <div class="page-header">
+        <h1>Sticky footer</h1>
+      </div>
+      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+      <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p></div>
 
-## Commands
+    </div>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+  </div>
+</div>
