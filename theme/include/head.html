@@ -1,3 +1,11 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
 <!--
   The page_title contains the title for a page as shown in the navigation.
   Site name contains the name as defined in the mkdocs.yml
@@ -20,9 +28,9 @@
 -->
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
-<link rel="stylesheet" href="{{ base_url }}/css/theme.css">
 <link rel="stylesheet" href="{{ base_url }}/css/bootstrap.min.css">
-<link rel="stylesheet" href="{{ base_url }}/css/boot-theme.min.css">
+<link rel="stylesheet" href="{{ base_url }}/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{{ base_url }}/css/theme.css">
 
 <!--
   extra_ess contains paths to CSS files in the users
@@ -40,8 +48,11 @@
   {{ base_url }} beforehand which will be the relative path to
   the root of the documentation.
 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{ base_url }}/js/theme.js"></script>
 <script src="{{ base_url }}/js/bootstrap.min.js"></script>
+<script src="{{ base_url }}/js/ie-emulation-modes-warning.js"></script>
+<script src="{{ base_url }}/js/ie10-viewport-bug-workaround.js"></script>
 
 <!--
   extra_javascript contains paths to JavaScript files in the
@@ -70,6 +81,8 @@
     ga('send', 'pageview');
 </script>
 {% endif %}
+
+<!-- Fonts -->
 
 {% block extrahead %}
 {% endblock %}
