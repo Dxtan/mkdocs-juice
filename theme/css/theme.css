@@ -87,3 +87,10 @@ footer {
     padding-left: 0;
   }
 }
+
+.doc-subnav {
+  text-align:justify;
+  height: 30px;
+  background-color: white;
+  border-bottom:1px solid #eee;
+}
