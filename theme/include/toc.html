@@ -1,0 +1,34 @@
+<div class="col-xs-6 col-sm-3 sidebar-wrapper affix-top" id="toc-wrapper" style="width: 279px;">
+  <div class="sidebar-affix-shadow on sidebar-hover-off">
+
+    <ol class="nav toc">
+      {% for toc_item in toc %}
+      <li><a href="{{ toc_item.url }}" class="itm-l1">{{ toc_item.title }}</a></li>
+
+      {% if toc_item.children %}
+      <ol>
+        {% for toc_item in toc_item.children %}
+        <li><a href="{{ toc_item.url }}" class="itm-l2">{{ toc_item.title }}</a></li>
+
+
+
+        {% if toc_item.children %}
+        <ol>
+          {% for toc_item_children in toc_item.children %}
+          <li><a href="{{ toc_item_children.url }}" class="itm-l2">{{ toc_item_children.title }}</a></li>
+          {% endfor %}
+        </ol>
+        {% endif %}
+
+        {% endfor %}
+      </ol>
+      {% endif %}
+
+      {% endfor %}
+
+      <li class="sidebar-meta">
+        <a href="#" class="do-expand-all">展开所有</a> <a href="#top" class="back-to-top">返回顶部</a>
+      </li>
+    </ol>
+  </div>
+</div>

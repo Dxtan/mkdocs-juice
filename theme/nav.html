@@ -1,6 +1,6 @@
 
 {% if not nav_item.children %}
-<li {% if nav_item.active %}class="active"{% endif %}>
+<li>
     <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
 </li>
 {% else %}
