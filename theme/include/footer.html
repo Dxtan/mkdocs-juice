@@ -1,5 +1,31 @@
-<footer class="navbar-static-bottom">
-  <div class="container text-center">
-    <div>Built with <a href="http://www.mkdocs.org">MkDocs</a>.</div>
+<footer class="footer">
+  <div class="row footer-links">
+    <ul>
+      <li>
+        {% if repo_url %}
+        {% if repo_name == 'GitHub' %}
+        <a href="{{ repo_url }}">GitHub</a>
+        {% elif repo_name == 'Bitbucket' %}
+        <a href="{{ repo_url }}">BitBucket</a>
+        {% else %}
+        <a href="{{ repo_url }}">Repository</a>
+        {% endif %}
+        {% endif %}
+        <a href="#">GitHub</a>
+        <a href="#">GitHub</a>
+        <a href="#">GitHub</a>
+      </li>
+    </ul>
   </div>
+  <div class="row">
+    <div class="container">
+      <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+  </div>
+
+
+
+
+
 </footer>
+

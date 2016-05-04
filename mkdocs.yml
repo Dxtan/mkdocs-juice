@@ -1,9 +1,18 @@
 site_name: My Docs
-pages:
-
+project_name : Juice
+repo_url: https://github.com/Dxtan/mkdocs-juice
+site_author: Dxtan
+copyright: Copyright © 2016 Dxtan, Mkdocs Juice.
 theme_dir: theme
-
 # Add permalink for sharing
 markdown_extensions:
+    - smarty
     - toc:
-        permalink: True
+#        permalink: True
+    - sane_lists
+
+pages:
+  - Home : 'index.html'
+  - QuickStart : 'QuickStart.md'
+
+
