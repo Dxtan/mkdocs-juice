@@ -1,7 +1,7 @@
 # mkdocs-juice
 
 ![image](http://chuantu.biz/t4/8/1462446229x3738746553.png)
-![image](http://7xtqiw.com1.z0.glb.clouddn.com/712B59A0-B487-4CD6-8CF8-C707A1011D52.png)
+![image](http://7xtqiw.com1.z0.glb.clouddn.com/F6D03E6F-AE07-4A95-88C5-5494F3DE9737.png)
 
 
 ##Installation
