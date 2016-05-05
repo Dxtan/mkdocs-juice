@@ -19,43 +19,42 @@
           <div class="page-header">
               <h1>Mkdocs-Juice</h1>
           </div>
-          <h2>Overview</h2>
-          <p>MkDocs is a fast, simple and downright gorgeous static site generator that's geared towards
-              building project documentation. Documentation source files are written in Markdown, and configured with a
-              single YAML configuration file.
-          </p>
-          <h2>Installation</h2>
-          <p>In order to install MkDocs you'll need <a href="https://www.python.org/">Python</a> installed on your
-              system, as
-              well as the Python package manager, <a href="http://pip.readthedocs.org/en/latest/installing.html">pip</a>.
-              You can check if you have these
-              already installed like so:
-          </p>
-          <pre><code class="bash hljs">$ python --version
-Python <span class="hljs-number">2.7</span>.<span class="hljs-number">2</span>
-$ pip --version
-pip <span class="hljs-number">1.5</span>.<span class="hljs-number">2</span>
+          <h2>Writing your docs</h2>
+          <h3>Configure Pages and Navigation</h3>
+          <p>The <a href="../configuration/#pages">pages configuration</a> in your
+              <code>mkdocs.yml</code> defines which pages are built by MkDocs and how they appear in the
+              documentation navigation. If not provided, the pages configuration will be
+              automatically created by discovering all the Markdown files in the
+              <a href="../configuration/#docs_dir">documentation directory</a>.</p>
+          <p>A simple pages configuration looks like this:</p>
+          <pre><code class="no-highlight">pages:
+- 'index.md'
+- 'about.md'
 </code></pre>
-          <p>MkDocs supports Python 2.6, 2.7, 3.3, 3.4 and 3.5.</p>
-          <p>On Windows we recommend that you install Python and pip with <a
-                  href="https://chocolatey.org/">Chocolatey</a>.</p>
-          <p>Install the <code>mkdocs</code> package using pip:</p>
-          <pre><code class="bash hljs">pip install mkdocs
+          <p>With this example we will build two pages at the top level and they will
+              automatically have their titles inferred from the filename. Assuming <code>docs_dir</code>
+              has the default value, <code>docs</code>, the source files for this documentation would be
+              <code>docs/index.md</code> and <code>docs/about.md</code>. To provide a custom name for these pages,
+              they can be added before the filename.</p>
+          <pre><code class="no-highlight">pages:
+- Home: 'index.md'
+- About: 'about.md'
 </code></pre>
-          <p>There's a single configuration file named <code>mkdocs.yml</code>, and a folder named
-              <code>docs</code> that will contain our documentation source files. Right now the <code>docs</code>
-              folder just contains a single documentation page, named <code>index.md</code>.</p>
-          <p>MkDocs comes with a built-in webserver that lets you preview your documentation
-              as you work on it. We start the webserver by making sure we're in the same
-              directory as the <code>mkdocs.yml</code> config file, and then running the <code>mkdocs serve</code>
-              command:</p>
-          <pre><code class="bash hljs">$ mkdocs serve
-Running at: http://<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span
-                      class="hljs-number">8000</span>/
+          <h3 id="multilevel-documentation">Multilevel documentation</h3>
+          <p>Subsections can be created by listing related pages together under a section
+              title. For example:</p>
+          <pre><code class="no-highlight">pages:
+- Home: 'index.md'
+- User Guide:
+    - 'Writing your docs': 'user-guide/writing-your-docs.md'
+    - 'Styling your docs': 'user-guide/styling-your-docs.md'
+- About:
+    - 'License': 'about/license.md'
+    - 'Release Notes': 'about/release-notes.md'
 </code></pre>
-          <p>Open up <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> in your browser, and
-              you'll see the index page.</p>
-
+          <p>By convention your project homepage should always be named <code>index</code>. Any of the
+              following extensions may be used for your Markdown source files: <code>markdown</code>,
+              <code>mdown</code>, <code>mkdn</code>, <code>mkd</code>, <code>md</code>.</p>
       </div>
 
   </div>
