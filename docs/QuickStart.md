@@ -200,8 +200,9 @@ The link appears at the upper right hand corner of your site.
 The Juice theme displays your license declaration in the footer if you include a `copyright` field and define it with the text (and optionally the HTML link) that you would like to display:
 
 ```yaml
-site_name: [YOURPROJECT]
-theme_dir: Juice
+site_name: [YOURSITE]
+project_name: [YOURPROJECT]
+theme_dir: theme
 copyright: Copyright © 2016 Dxtan, Mkdocs Juice.
 pages:
   - Home: index.md
