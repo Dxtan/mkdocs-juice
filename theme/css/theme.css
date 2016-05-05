@@ -1,5 +1,9 @@
+ul {
+  padding: 0;
+}
+
 body {
-  min-height: 600px;
+  /*min-height: 600px;*/
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Microsoft Yahei","WenQuanYi Micro Hei",Arial,Verdana,sans-serif;
 }
 
@@ -14,10 +18,22 @@ footer {
 
 .footer-links {
   padding-top: 20px;
+  margin-bottom: 15px;
+  align-content: center;
 }
 
 .footer-links > ul {
   list-style: none;
+}
+
+.footer-links > ul > li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.footer-links > ul > li > a {
+  font-size: 16px;
+  color: #525252;
 }
 
 /* Main marketing message and sign up button */

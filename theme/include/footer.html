@@ -1,7 +1,7 @@
-<footer class="footer">
-  <div class="row footer-links">
+<footer class="footer navbar-static-bottom">
+  <div class="container footer-links">
     <ul>
-      <li>
+      <li class="">
         {% if repo_url %}
         {% if repo_name == 'GitHub' %}
         <a href="{{ repo_url }}">GitHub</a>
@@ -11,15 +11,15 @@
         <a href="{{ repo_url }}">Repository</a>
         {% endif %}
         {% endif %}
-        <a href="#">GitHub</a>
-        <a href="#">GitHub</a>
-        <a href="#">GitHub</a>
       </li>
+      <li><a>API</a></li>
+      <li><a>Follow</a></li>
+      <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div class="row">
+  <div class="">
     <div class="container">
-      <p class="text-muted">Place sticky footer content here.</p>
+      <p class="text-muted">{{ copyright }}</p>
     </div>
   </div>
 
