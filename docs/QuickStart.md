@@ -1,9 +1,7 @@
 # Juice Theme <small>for MkDocs</small>
 
 ## About
-Juice is a clean, responsive PowerShell-inspired MkDocs static documentation site generator theme -forked with love from [Chris Simpkins](https://twitter.com/csimpkins)' [Cinder](https://github.com/chrissimpkins/cinder). It's built on the [Bootstrap framework](http://getbootstrap.com/) and includes pre-packaged syntax highlighting ([highlight.js](https://highlightjs.org/)), icons (<i class="fa fa-flag"></i> [FontAwesome](https://fortawesome.github.io/Font-Awesome/)), and a theme based on [PSReadLine](https://github.com/lzybkr/PSReadLine)'s default colors for a PowerShell console-themed documentation site.
-
-You are looking at the theme and can see a selection of the theme elements on the [Specimen page](/specimen/).
+Juice is a clean, responsive PowerShell-inspired MkDocs static documentation site generator theme -forked with love [Dxtan](https://github.com/Dxtan/mkdocs-juice). It's built on the [Bootstrap framework](http://getbootstrap.com/) .
 
 ## Install
 
@@ -45,7 +43,8 @@ $ pip install mkdocs-Juice
 MkDocs projects use a YAML settings file called `mkdocs.yml`.  This is located in the root of your project directory after you use the `mkdocs new` command.  Open the file in a text editor and modify it to define Juice in the `theme` setting as follows (note that this is case-sensitive):
 
 ```yaml
-site_name: [YOURPROJECT]
+site_name: [YOURSITE]
+PROJECT_name: [YOURPROJECT]
 theme: Juice
 pages:
 - Home: index.md
@@ -57,7 +56,7 @@ pages:
 
 Download the Juice theme archive.
 
-<a href="https://github.com/michaeltlombardi/mkdocs-Juice/releases/download/Latest/mkdocs-Juice-0.1.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Juice v0.1.0</button></a>
+<a href="#"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Juice v0.1.0</button></a>
 
 Unpack the contents of the archive into a directory named `Juice` at the top level of your MkDocs project directory.
 
@@ -65,16 +64,13 @@ Your project directory should now look like this:
 
 ```
 ├── mkdocs.yml
-├── Juice
+├── theme
 │     ├── css
-│     ├── img
+│     ├── font
 │     ├── js
+│     ├── include
 │     ├── base.html
-│     ├── content.html
-│     ├── 404.html
-│     ├── nav-sub.html
-│     ├── nav.html
-│     └── toc.html
+│     └── nav.html
 └── docs
       └── index.md
 ```
@@ -165,7 +161,7 @@ pages:
   - About: about.md
 ```
 
-Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Juice styles).  You can find the Juice and Bootstrap CSS files on the paths `Juice/css/Juice.css` and `Juice/css/bootstrap.min.css`, respectively.
+Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Juice styles).  You can find the Juice and Bootstrap CSS files on the paths `theme/css/theme.css` and `theme/css/bootstrap.min.css`, respectively.
 
 
 ### Add Your Own JavaScript
@@ -190,7 +186,7 @@ Include the `repo_url` field and define it with your repository URL:
 ```yaml
 site_name: [YOURPROJECT]
 theme_dir: Juice
-repo_url: "https://github.com/michaeltlombardi/mkdocs-Juice"
+repo_url: "https://github.com/Dxtan/mkdocs-juice"
 pages:
   - Home: index.md
   - About: about.md
@@ -205,7 +201,7 @@ The Juice theme displays your license declaration in the footer if you include a
 ```yaml
 site_name: [YOURPROJECT]
 theme_dir: Juice
-copyright: "Juice is licensed under the &lt;a href='https://github.com/michaeltlombardi/mkdocs-Juice/blob/master/LICENSE.md'&gt;MIT license</a>"
+copyright: Copyright © 2016 Dxtan, Mkdocs Juice.
 pages:
   - Home: index.md
   - About: about.md
@@ -215,12 +211,12 @@ pages:
 
 If you have any issues with the theme, please report them on the Juice repository:
 
-<a href="https://github.com/michaeltlombardi/mkdocs-Juice/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
-<a href="https://github.com/michaeltlombardi/mkdocs-Juice/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a>
+<a href="https://github.com/Dxtan/mkdocs-juice/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
+<a href="https://github.com/Dxtan/mkdocs-juice/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a>
 
 ## License
 
-Juice is licensed under the MIT license. The full text of the license is available [here](https://github.com/michaeltlombardi/mkdocs-Juice/blob/master/LICENSE.md).
+Juice is licensed under the MIT license. The full text of the license is available [here](https://github.com/Dxtan/mkdocs-juice).
 
 
 
