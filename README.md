@@ -50,8 +50,9 @@ Add new pages to your site by creating a new Markdown file in your `docs` direct
 For example, to add an About page using a Markdown file that is located on the path `docs/about.md`, you would format the `mkdocs.yml` file as follows:
 
 ```yaml
-site_name: [YOURPROJECT]
-theme_dir: Juice
+site_name: [YOURSITE]
+project_name: [YOURPROJECT]
+theme_dir: theme
 pages:
 - Home: index.md
 - About: about.md

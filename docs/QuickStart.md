@@ -184,8 +184,9 @@ pages:
 Include the `repo_url` field and define it with your repository URL:
 
 ```yaml
-site_name: [YOURPROJECT]
-theme_dir: Juice
+site_name: [YOURSITE]
+project_name: [YOURPROJECT]
+theme_dir: theme
 repo_url: "https://github.com/Dxtan/mkdocs-juice"
 pages:
   - Home: index.md
