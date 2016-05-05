@@ -12,7 +12,7 @@ Juice is a clean, responsive PowerShell-inspired MkDocs static documentation sit
 
 ##Examples
 
-Thes is [Demo]((https://github.com/Dxtan/mkdocs-juice)
+Thes is [Demo](https://github.com/Dxtan/mkdocs-juice)
 
 ##Download & install
 
