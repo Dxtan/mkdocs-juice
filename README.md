@@ -26,6 +26,12 @@ If you haven't installed MkDocs yet, use the following command to install it:
 $ pip install mkdocs
 ```
 
+You should download the code like this:
+
+```bash
+$ git clone https://github.com/Dxtan/mkdocs-juice.git
+```
+
 Use the following command to establish a local server for your site:
 
 ```bash
