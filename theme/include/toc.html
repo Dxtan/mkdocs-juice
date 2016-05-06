@@ -1,0 +1,32 @@
+<div class="col-xs-6 col-sm-3 toc" role="complementary" >
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="navbar-example" data-spy="affix" data-offset-top="100" data-offset-bottom="100" >
+
+    <ul class="nav bs-docs-sidenav" >
+      {% for toc_item in toc %}
+      <li><a href="{{ toc_item.url }}" >{{ toc_item.title }}</a>
+        {% if toc_item.children %}
+        <ul class="nav">
+          {% for toc_item1 in toc_item.children %}
+          <li><a href="{{ toc_item1.url }}" >{{ toc_item1.title }}</a></li>
+
+          {% if toc_item1.children %}
+          <ul class="nav">
+            {% for toc_item_2 in toc_item1.children %}
+            <li><a href="{{ toc_item_2.url }}" >{{ toc_item_2.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+
+      {% endfor %}
+
+      <li class="sidebar-meta">
+        <a href="#top" class="back-to-top">TOP</a>
+      </li>
+    </ul>
+  </nav>
+</div>

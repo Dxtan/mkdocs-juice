@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input form-control input-lg" placeholder="Search the Docs" autocomplete="off">
+  </form>
+  <hr>
+
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
+  </div>
+</div>
+
+
+{% endblock %}

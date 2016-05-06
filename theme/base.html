@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  {% include "./include/head.html" %}
+</head>
+
+<body>
+
+  <nav class="navbar-default navbar-static-top">
+      <div class="container">
+          <div class="navbar-header">
+
+              <!-- Collapsed Hamburger -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+              <!-- Branding Image -->
+              <a class="navbar-brand" href="/index.html">
+                  {{ config.project_name }}
+              </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="app-navbar-collapse">
+              <!-- Left Side Of Navbar -->
+              <ul class="nav navbar-nav">
+                  {% for nav_item in nav %}
+                  {% include "nav.html" %}
+                  {% endfor %}
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <div class="container-fluid">
+    {% if previous_page %}
+
+        {% for nav_item in nav %}
+          {% if nav_item.active %}
+
+                    <ol class="container breadcrumb">
+                      <li><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></li>
+                      <li class="active">{{ current_page.title }}</li>
+                    </ol>
+
+          {% endif %}
+        {% endfor %}
+
+    {% endif %}
+
+    {% if previous_page %}
+      {% include "include/toc.html" %}
+    {% endif %}
+
+    <div class="content-body col-sm-9 col-xs-6" role="main" data-spy="scroll" data-target="#navbar-example">
+            {% block content %}
+            {{ content }}
+            {% endblock %}
+    </div>
+
+    </div>
+  </div>
+
+  <!--
+  MkDocs version      : {{ mkdocs_version }}
+  Docs Build Date UTC : {{ build_date_utc }}
+  -->
+
+</body>
+
+{% include "./include/footer.html" %}
+</html>

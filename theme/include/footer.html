@@ -1,0 +1,31 @@
+<footer class="footer navbar-static-bottom">
+  <div class="container footer-links">
+    <ul>
+      <li class="">
+        {% if repo_url %}
+        {% if repo_name == 'GitHub' %}
+        <a href="{{ repo_url }}">GitHub</a>
+        {% elif repo_name == 'Bitbucket' %}
+        <a href="{{ repo_url }}">BitBucket</a>
+        {% else %}
+        <a href="{{ repo_url }}">Repository</a>
+        {% endif %}
+        {% endif %}
+      </li>
+      <li><a>API</a></li>
+      <li><a>Follow</a></li>
+      <li><a>FAQ</a></li>
+    </ul>
+  </div>
+  <div class="">
+    <div class="container">
+      <p class="text-muted">{{ copyright }}</p>
+    </div>
+  </div>
+
+
+
+
+
+</footer>
+
